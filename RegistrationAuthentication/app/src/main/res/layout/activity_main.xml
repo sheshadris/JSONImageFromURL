@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f25f2e"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="364dp"
+        android:background="#5799f0"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/username_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignBottom="@+id/edt_username"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="Username"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/password_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/edt_password"
+            android:layout_alignLeft="@+id/username_txt"
+            android:layout_alignStart="@+id/username_txt"
+            android:gravity="center"
+            android:text="Password"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="27dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Enter Email"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="110dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Enter Mobile Number"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="218dp"
+            android:background="#fbfaaf"
+            android:text="Sign In" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/btn_signup"
+            android:layout_alignLeft="@+id/username_txt"
+            android:layout_alignStart="@+id/username_txt"
+            android:gravity="center"
+            android:text="Not Yet Registered?Sign Up"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/btn_signin"
+            android:layout_marginEnd="20dp"
+            android:background="#fa6262"
+            android:text="Sign Up"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+</RelativeLayout>
